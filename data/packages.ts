@@ -84,7 +84,7 @@ export const packages: Package[] = [
     category: 'Pilgrimage',
     featured: true,
     rating: 4.8,
-    reviewCount: 127
+    reviewCount: 127,
   },
   {
     id: '2',
@@ -151,7 +151,7 @@ export const packages: Package[] = [
     category: 'Pilgrimage',
     featured: true,
     rating: 4.9,
-    reviewCount: 89
+    reviewCount: 89,
   },
   {
     id: '3',
@@ -226,7 +226,7 @@ export const packages: Package[] = [
     category: 'Spiritual',
     featured: true,
     rating: 4.7,
-    reviewCount: 156
+    reviewCount: 156,
   },
   {
     id: '4',
@@ -317,7 +317,7 @@ export const packages: Package[] = [
     category: 'Pilgrimage',
     featured: false,
     rating: 4.6,
-    reviewCount: 98
+    reviewCount: 98,
   },
   {
     id: '5',
@@ -388,7 +388,7 @@ export const packages: Package[] = [
     category: 'Pilgrimage',
     featured: true,
     rating: 4.9,
-    reviewCount: 73
+    reviewCount: 73,
   },
   {
     id: '6',
@@ -450,6 +450,6 @@ export const packages: Package[] = [
     category: 'Cultural',
     featured: false,
     rating: 4.5,
-    reviewCount: 134
+    reviewCount: 134,
   }
 ];

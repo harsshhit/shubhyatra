@@ -7,7 +7,7 @@ import { PackageCard } from '@/components/PackageCard';
 import { Footer } from '@/components/Footer';
 import { packages } from '@/data/packages';
 import { Package } from '@/types';
-import { Search, Filter, MapPin, Clock, DollarSign, Star } from 'lucide-react';
+import { Search, Filter, MapPin, Clock, Star } from 'lucide-react';
 
 export default function PackagesPage() {
   const [searchTerm, setSearchTerm] = useState('');
@@ -32,8 +32,6 @@ export default function PackagesPage() {
 
   const sortOptions = [
     { id: 'featured', name: 'Featured First' },
-    { id: 'price-low', name: 'Price: Low to High' },
-    { id: 'price-high', name: 'Price: High to Low' },
     { id: 'rating', name: 'Highest Rated' },
     { id: 'duration', name: 'Duration' }
   ];
@@ -51,10 +49,6 @@ export default function PackagesPage() {
     })
     .sort((a: Package, b: Package) => {
       switch (sortBy) {
-        case 'price-low':
-          return a.price.amount - b.price.amount;
-        case 'price-high':
-          return b.price.amount - a.price.amount;
         case 'rating':
           return b.rating - a.rating;
         case 'duration':
@@ -232,16 +226,6 @@ export default function PackagesPage() {
               <p className="text-gray-600">Days Duration</p>
             </motion.div>
             
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.2 }}
-              viewport={{ once: true }}
-            >
-              <DollarSign className="w-12 h-12 text-saffron mx-auto mb-3" />
-              <h3 className="text-2xl font-bold text-gray-900">₹8K-50K</h3>
-              <p className="text-gray-600">Price Range</p>
-            </motion.div>
             
             <motion.div
               initial={{ opacity: 0, y: 20 }}

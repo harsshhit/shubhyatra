@@ -11,7 +11,7 @@ import { generateWhatsAppUrl } from '@/lib/constants';
 import { 
   MapPin, Clock, Star, Users, MessageCircle, Phone, Mail, 
   CheckCircle, XCircle, Calendar, Mountain, Info, ChevronLeft, 
-  ChevronRight, Heart, Share2, Camera
+  ChevronRight, Heart, Share2, Camera, X
 } from 'lucide-react';
 import { notFound } from 'next/navigation';
 
@@ -20,6 +20,7 @@ interface PackageDetailsProps {
     slug: string;
   };
 }
+
 
 export default function PackageDetails({ params }: PackageDetailsProps) {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -53,8 +54,6 @@ export default function PackageDetails({ params }: PackageDetailsProps) {
     { id: 'gallery', label: 'Gallery' }
   ];
 
-  const discount = packageData.originalPrice ? 
-    Math.round(((packageData.originalPrice - packageData.price.amount) / packageData.originalPrice) * 100) : 0;
 
   return (
     <main className="min-h-screen bg-white">
@@ -172,28 +171,10 @@ export default function PackageDetails({ params }: PackageDetailsProps) {
                 </p>
               </div>
 
-              {/* Pricing */}
+              {/* Booking Section */}
               <div className="bg-gray-50 rounded-2xl p-6">
-                <div className="flex items-center justify-between mb-4">
-                  <div>
-                    <div className="flex items-baseline">
-                      <span className="text-3xl font-bold text-saffron">
-                        {packageData.price.currency}{packageData.price.amount.toLocaleString('en-IN')}
-                      </span>
-                      <span className="text-gray-600 ml-2">/{packageData.price.per}</span>
-                      {packageData.originalPrice && (
-                        <>
-                          <span className="text-xl text-gray-400 line-through ml-3">
-                            {packageData.price.currency}{packageData.originalPrice.toLocaleString('en-IN')}
-                          </span>
-                          <span className="bg-red-500 text-white px-2 py-1 rounded-full text-xs ml-2">
-                            {discount}% OFF
-                          </span>
-                        </>
-                      )}
-                    </div>
-                    <p className="text-sm text-gray-600 mt-1">*All inclusive package</p>
-                  </div>
+                <div className="mb-4">
+                  <p className="text-sm text-gray-600">*All inclusive package</p>
                 </div>
 
                 {/* Booking Buttons */}
