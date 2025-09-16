@@ -17,8 +17,7 @@ export function PackageCard({ package: pkg, index = 0 }: PackageCardProps) {
   const [imageLoaded, setImageLoaded] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
 
-  const discount = pkg.originalPrice ? 
-    Math.round(((pkg.originalPrice - pkg.price.amount) / pkg.originalPrice) * 100) : 0;
+  // Removed price calculation as we're not showing prices
 
   return (
     <motion.div
@@ -53,11 +52,6 @@ export function PackageCard({ package: pkg, index = 0 }: PackageCardProps) {
           {pkg.featured && (
             <span className="bg-saffron text-white px-3 py-1 rounded-full text-xs font-semibold">
               Featured
-            </span>
-          )}
-          {discount > 0 && (
-            <span className="bg-red-500 text-white px-3 py-1 rounded-full text-xs font-semibold">
-              {discount}% OFF
             </span>
           )}
         </div>
@@ -139,20 +133,14 @@ export function PackageCard({ package: pkg, index = 0 }: PackageCardProps) {
           </ul>
         </div>
 
-        {/* Pricing */}
+        {/* Plan Information */}
         <div className="mb-6">
-          <div className="flex items-baseline">
-            <span className="text-3xl font-bold text-saffron">
-              {pkg.price.currency}{pkg.price.amount.toLocaleString('en-IN')}
-            </span>
-            <span className="text-sm text-gray-600 ml-1">/{pkg.price.per}</span>
-            {pkg.originalPrice && (
-              <span className="text-lg text-gray-400 line-through ml-3">
-                {pkg.price.currency}{pkg.originalPrice.toLocaleString('en-IN')}
-              </span>
-            )}
+          <div className="bg-saffron/10 rounded-lg p-4">
+            <h4 className="text-sm font-semibold text-saffron mb-2">Plan Details</h4>
+            <p className="text-xs text-gray-600">
+              All inclusive package - accommodation, meals, transportation and guide services included
+            </p>
           </div>
-          <p className="text-xs text-gray-500 mt-1">*All inclusive package</p>
         </div>
 
         {/* Actions */}

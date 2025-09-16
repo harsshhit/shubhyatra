@@ -13,9 +13,9 @@ interface HeroBannerProps {
 }
 
 export function HeroBanner({
-  title = "Embark on Your Spiritual Journey with ShubhYatra",
-  subtitle = "Discover divine destinations with comfort, safety, and devotion. Experience the sacred sites of India with our expertly guided pilgrimage tours.",
-  backgroundImage = "https://images.pexels.com/photos/8078181/pexels-photo-8078181.jpeg?auto=compress&cs=tinysrgb&w=1600",
+  title = "अपनी आध्यात्मिक यात्रा शुरू करें - ShubhYatra के साथ",
+  subtitle = "भारत के पवित्र स्थलों की खोज करें। आराम, सुरक्षा और भक्ति के साथ दिव्य गंतव्यों का अनुभव करें।",
+  backgroundImage = "https://upload.wikimedia.org/wikipedia/commons/d/df/Ayodhya_Ram_Mandir_Inauguration_Day_Picture.jpg",
   showBookingButton = true,
   height = 'full'
 }: HeroBannerProps) {
@@ -34,8 +34,8 @@ export function HeroBanner({
           backgroundImage: `url(${backgroundImage})`,
         }}
       >
-        <div className="absolute inset-0 bg-black/40"></div>
-        <div className="absolute inset-0 bg-gradient-to-r from-saffron/20 to-transparent"></div>
+        <div className="absolute inset-0 bg-black/50 blur-sm"></div>
+        {/* <div className="absolute inset-0 bg-gradient-to-r from-black/50 to-transparent"></div> */}
       </div>
 
       {/* Content */}
@@ -45,7 +45,7 @@ export function HeroBanner({
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-balance">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-balance text-white">
             {title}
           </h1>
           <p className="text-lg md:text-xl lg:text-2xl mb-8 text-balance opacity-90 max-w-3xl mx-auto">

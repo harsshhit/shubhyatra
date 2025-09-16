@@ -5,12 +5,6 @@ export interface Package {
   shortDescription: string;
   fullDescription: string;
   duration: string;
-  price: {
-    amount: number;
-    currency: string;
-    per: string;
-  };
-  originalPrice?: number;
   images: string[];
   highlights: string[];
   itinerary: ItineraryDay[];

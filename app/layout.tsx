@@ -10,6 +10,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://shubhyatra.com'),
   title: {
     default: 'ShubhYatra - Spiritual Tourism & Pilgrimage Tours',
     template: '%s | ShubhYatra - Spiritual Tourism'

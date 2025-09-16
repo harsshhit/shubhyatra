@@ -8,16 +8,10 @@ export const packages: Package[] = [
     shortDescription: 'Experience the divine energy of Lord Shiva at one of the most sacred Jyotirlingas in the Himalayas.',
     fullDescription: 'Embark on a transformative spiritual journey to Kedarnath, one of the most revered pilgrimage sites in India. Nestled in the majestic Himalayas, this sacred temple dedicated to Lord Shiva offers devotees an opportunity for profound spiritual awakening. Our carefully planned itinerary ensures comfortable accommodation, guided tours, and safe transportation while maintaining the sanctity of your pilgrimage.',
     duration: '5 Days 4 Nights',
-    price: {
-      amount: 15999,
-      currency: '₹',
-      per: 'person'
-    },
-    originalPrice: 19999,
     images: [
-      'https://images.pexels.com/photos/8078181/pexels-photo-8078181.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      'https://images.pexels.com/photos/9392835/pexels-photo-9392835.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      'https://images.pexels.com/photos/6128050/pexels-photo-6128050.jpeg?auto=compress&cs=tinysrgb&w=1200'
+      'https://images.unsplash.com/photo-1578662996442-48f60103fc96?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1587474260584-136574528ed5?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1578662996442-48f60103fc96?auto=format&fit=crop&w=1200&q=80'
     ],
     highlights: [
       'Helicopter facility available',
@@ -99,16 +93,10 @@ export const packages: Package[] = [
     shortDescription: 'Visit the newly constructed Ram Mandir in Ayodhya and explore the holy city of Lord Rama.',
     fullDescription: 'Witness history in the making with a visit to the magnificent Ram Mandir in Ayodhya. This sacred journey takes you to the birthplace of Lord Rama, where the newly constructed temple stands as a testament to faith and devotion. Experience the divine atmosphere of Ayodhya, visit important religious sites, and participate in the spiritual activities that make this pilgrimage truly memorable.',
     duration: '3 Days 2 Nights',
-    price: {
-      amount: 8999,
-      currency: '₹',
-      per: 'person'
-    },
-    originalPrice: 11999,
     images: [
-      'https://images.pexels.com/photos/6128055/pexels-photo-6128055.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      'https://images.pexels.com/photos/8078176/pexels-photo-8078176.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      'https://images.pexels.com/photos/9392839/pexels-photo-9392839.jpeg?auto=compress&cs=tinysrgb&w=1200'
+      'https://images.unsplash.com/photo-1606092195730-5d7b9af1efc5?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1578662996442-48f60103fc96?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1606092195730-5d7b9af1efc5?auto=format&fit=crop&w=1200&q=80'
     ],
     highlights: [
       'VIP darshan at Ram Mandir',
@@ -172,16 +160,10 @@ export const packages: Package[] = [
     shortDescription: 'Immerse yourself in the spiritual capital of India with Ganga aarti, temple visits, and cultural experiences.',
     fullDescription: 'Discover the eternal city of Varanasi, one of the oldest continuously inhabited cities in the world. Experience the mystical atmosphere of the ghats, witness the mesmerizing Ganga aarti, visit ancient temples, and participate in spiritual rituals that have been performed for thousands of years. This journey offers a deep dive into Indian spirituality and culture.',
     duration: '4 Days 3 Nights',
-    price: {
-      amount: 12999,
-      currency: '₹',
-      per: 'person'
-    },
-    originalPrice: 15999,
     images: [
-      'https://images.pexels.com/photos/3581368/pexels-photo-3581368.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      'https://images.pexels.com/photos/6128043/pexels-photo-6128043.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      'https://images.pexels.com/photos/8078182/pexels-photo-8078182.jpeg?auto=compress&cs=tinysrgb&w=1200'
+      'https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1578662996442-48f60103fc96?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=1200&q=80'
     ],
     highlights: [
       'Sunrise boat ride on Ganges',
@@ -253,16 +235,10 @@ export const packages: Package[] = [
     shortDescription: 'Visit the sacred Jyotirlinga at Somnath and the Krishna Janmabhoomi in Dwarka.',
     fullDescription: 'Experience the divine journey to two of the most sacred places in India. Visit Somnath, home to one of the twelve Jyotirlingas, and Dwarka, the ancient kingdom of Lord Krishna. This pilgrimage combines spiritual significance with historical importance, offering devotees a chance to connect with ancient Indian traditions and mythology.',
     duration: '6 Days 5 Nights',
-    price: {
-      amount: 18999,
-      currency: '₹',
-      per: 'person'
-    },
-    originalPrice: 23999,
     images: [
-      'https://images.pexels.com/photos/6128046/pexels-photo-6128046.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      'https://images.pexels.com/photos/8078179/pexels-photo-8078179.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      'https://images.pexels.com/photos/9392841/pexels-photo-9392841.jpeg?auto=compress&cs=tinysrgb&w=1200'
+      'https://images.unsplash.com/photo-1578662996442-48f60103fc96?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1606092195730-5d7b9af1efc5?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1578662996442-48f60103fc96?auto=format&fit=crop&w=1200&q=80'
     ],
     highlights: [
       'Darshan at Somnath Jyotirlinga',
@@ -350,16 +326,10 @@ export const packages: Package[] = [
     shortDescription: 'Complete pilgrimage to all four sacred Dhams: Kedarnath, Badrinath, Gangotri, and Yamunotri.',
     fullDescription: 'Embark on the ultimate spiritual journey covering all four sacred sites of the Char Dham circuit. This comprehensive pilgrimage takes you through the breathtaking Himalayas to visit Yamunotri, Gangotri, Kedarnath, and Badrinath. Experience the divine energy of these ancient temples while enjoying comfortable accommodations and expert guidance throughout your journey.',
     duration: '12 Days 11 Nights',
-    price: {
-      amount: 45999,
-      currency: '₹',
-      per: 'person'
-    },
-    originalPrice: 55999,
     images: [
-      'https://images.pexels.com/photos/8078181/pexels-photo-8078181.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      'https://images.pexels.com/photos/6128050/pexels-photo-6128050.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      'https://images.pexels.com/photos/9392835/pexels-photo-9392835.jpeg?auto=compress&cs=tinysrgb&w=1200'
+      'https://images.unsplash.com/photo-1578662996442-48f60103fc96?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1587474260584-136574528ed5?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1578662996442-48f60103fc96?auto=format&fit=crop&w=1200&q=80'
     ],
     highlights: [
       'Complete Char Dham circuit',
@@ -427,16 +397,10 @@ export const packages: Package[] = [
     shortDescription: 'Explore India\'s cultural heritage with Delhi, Agra, Jaipur, and the spiritual city of Varanasi.',
     fullDescription: 'Combine India\'s most famous cultural circuit with a profound spiritual experience. This journey takes you through the Golden Triangle - Delhi, Agra, and Jaipur - showcasing India\'s rich history and architecture, followed by the deeply spiritual experience of Varanasi. Perfect for those seeking both cultural immersion and spiritual awakening.',
     duration: '8 Days 7 Nights',
-    price: {
-      amount: 28999,
-      currency: '₹',
-      per: 'person'
-    },
-    originalPrice: 35999,
     images: [
-      'https://images.pexels.com/photos/1603650/pexels-photo-1603650.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      'https://images.pexels.com/photos/3581368/pexels-photo-3581368.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      'https://images.pexels.com/photos/2601718/pexels-photo-2601718.jpeg?auto=compress&cs=tinysrgb&w=1200'
+      'https://images.unsplash.com/photo-1606092195730-5d7b9af1efc5?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1606092195730-5d7b9af1efc5?auto=format&fit=crop&w=1200&q=80'
     ],
     highlights: [
       'Taj Mahal sunrise visit',

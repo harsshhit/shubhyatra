@@ -102,7 +102,7 @@ export default function ContactPage() {
   };
 
   return (
-    <main className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white"> 
       <Navbar />
       
       {/* Hero Section */}
@@ -158,7 +158,7 @@ export default function ContactPage() {
       </section>
 
       {/* Main Content */}
-      <section className="py-16">
+      <section className="py-16"> 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Form */}
@@ -449,12 +449,12 @@ export default function ContactPage() {
                   </p>
                 </div>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>
-
+      
       <Footer />
-    </main>
+    </div>
   );
 }
