@@ -35,6 +35,7 @@ export function PackageCard({ package: pkg, index = 0 }: PackageCardProps) {
           src={pkg.images[0]}
           alt={pkg.title}
           fill
+          priority={index === 0}
           className={`object-cover transition-all duration-700 group-hover:scale-110 ${
             imageLoaded ? 'opacity-100' : 'opacity-0'
           }`}
