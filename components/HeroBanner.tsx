@@ -13,8 +13,8 @@ interface HeroBannerProps {
 }
 
 export function HeroBanner({
-  title = "अपनी आध्यात्मिक यात्रा शुरू करें - ShubhYatra के साथ",
-  subtitle = "भारत के पवित्र स्थलों की खोज करें। आराम, सुरक्षा और भक्ति के साथ दिव्य गंतव्यों का अनुभव करें।",
+  title = "Begin your spiritual journey with ShubhYatra",
+  subtitle = "Explore the sacred sites of India. Experience divine destinations with comfort, safety, and devotion.",
   backgroundImage = "https://upload.wikimedia.org/wikipedia/commons/d/df/Ayodhya_Ram_Mandir_Inauguration_Day_Picture.jpg",
   showBookingButton = true,
   height = 'full'
@@ -24,6 +24,7 @@ export function HeroBanner({
     large: 'h-[600px]',
     medium: 'h-[400px]'
   };
+
 
   return (
     <div className={`relative ${heightClasses[height]} flex items-center justify-center overflow-hidden`}>
