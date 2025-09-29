@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { MapPin, Phone, Mail, MessageCircle, Facebook, Instagram, Youtube, Twitter, Heart } from 'lucide-react';
 import { CONTACT_INFO, SOCIAL_LINKS, generateWhatsAppUrl } from '@/lib/constants';
+import { BrandName } from '@/components/BrandName';
 
 export function Footer() {
   const footerSections = [
@@ -19,10 +20,8 @@ export function Footer() {
     {
       title: 'Popular Destinations',
       links: [
-        { name: 'Kedarnath Yatra', href: '/packages/kedarnath-yatra' },
         { name: 'Ram Mandir Ayodhya', href: '/packages/ram-mandir-ayodhya' },
         { name: 'Varanasi Tour', href: '/packages/varanasi-spiritual-tour' },
-        { name: 'Char Dham Yatra', href: '/packages/char-dham-yatra' },
       ]
     },
     {
@@ -62,7 +61,7 @@ export function Footer() {
                 </div>
                 <div>
                   <h1 className="text-xl font-bold text-white">
-                    Shubh<span className="text-saffron">Yatra</span>
+                    <BrandName toursClassName="text-saffron" />
                   </h1>
                   <p className="text-xs text-gray-400 -mt-1">Spiritual Tourism</p>
                 </div>
@@ -159,7 +158,7 @@ export function Footer() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm mb-4 md:mb-0">
-              © 2024 ShubhYatra. All rights reserved.
+              © 2024 BVN Tours. All rights reserved.
             </p>
             
             <div className="flex items-center text-gray-400 text-sm">

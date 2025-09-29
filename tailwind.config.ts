@@ -16,14 +16,19 @@ const config: Config = {
           foreground: '#1f2937',
         },
         saffron: {
-          light: '#FFA726',
-          DEFAULT: '#FF9933',
-          dark: '#FF6F00',
-          foreground: '#FFFFFF',
+          light: '#FFB74D',
+          DEFAULT: '#F8B31B',
+          dark: '#C98E16',
+          foreground: '#1F1F1F',
         },
         whatsapp: {
           DEFAULT: '#25D366',
           dark: '#1DA851',
+        },
+        brand: {
+          cyan: '#02AED3',
+          amber: '#F8B31B',
+          maroon: '#E7107D',
         },
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',

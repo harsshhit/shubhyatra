@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { Navbar } from '@/components/Navbar';
 import { Footer } from '@/components/Footer';
 import { TEAM_MEMBERS, FEATURES, generateWhatsAppUrl } from '@/lib/constants';
+import { BrandName } from '@/components/BrandName';
 import { Heart, Award, Users, Star, MessageCircle, Target, Eye } from 'lucide-react';
 
 export default function AboutPage() {
@@ -51,7 +52,7 @@ export default function AboutPage() {
             className="text-center text-white"
           >
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              About ShubhYatra
+              About <BrandName />
             </h1>
             <p className="text-xl opacity-90 max-w-3xl mx-auto">
               Your trusted companion for spiritual journeys across India's most sacred destinations. 
@@ -131,7 +132,7 @@ export default function AboutPage() {
             </h2>
             <div className="prose prose-lg mx-auto text-gray-700">
               <p>
-                ShubhYatra was born from a profound personal experience during a pilgrimage to Kedarnath in 2014. 
+                BVN Tours was born from a profound personal experience during a pilgrimage to Kedarnath in 2014. 
                 Our founder, Swami Ramanand, witnessed the challenges that many pilgrims faced - from inadequate 
                 facilities to lack of proper guidance about the spiritual significance of sacred sites.
               </p>
@@ -142,7 +143,7 @@ export default function AboutPage() {
                 in spiritual tourism across India.
               </p>
               <p>
-                Today, ShubhYatra stands as a testament to the power of combining traditional wisdom with modern 
+                Today, BVN Tours stands as a testament to the power of combining traditional wisdom with modern 
                 convenience. We have helped thousands of devotees connect with the divine while ensuring their 
                 safety, comfort, and spiritual growth throughout their sacred journeys.
               </p>
@@ -303,7 +304,7 @@ export default function AboutPage() {
               Join Us on a Sacred Journey
             </h2>
             <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-              Experience the transformative power of pilgrimage with ShubhYatra. 
+              Experience the transformative power of pilgrimage with BVN Tours. 
               Let us guide you on a journey that will touch your soul and awaken your spirit.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

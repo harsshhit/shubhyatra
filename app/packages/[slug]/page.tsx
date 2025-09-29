@@ -197,7 +197,7 @@ export default function PackageDetails({ params }: PackageDetailsProps) {
 
                 <div className="mt-4 text-center">
                   <a
-                    href={`mailto:info@shubhyatra.com?subject=Inquiry about ${packageData.title}`}
+                    href={`mailto:info@bvntours.com?subject=Inquiry about ${packageData.title}`}
                     className="inline-flex items-center text-saffron hover:text-saffron-dark font-medium"
                   >
                     <Mail className="w-4 h-4 mr-2" />

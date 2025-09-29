@@ -10,12 +10,12 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://shubhyatra.com'),
+  metadataBase: new URL('https://bvntours.com'),
   title: {
-    default: 'ShubhYatra - Spiritual Tourism & Pilgrimage Tours',
-    template: '%s | ShubhYatra - Spiritual Tourism'
+    default: 'BVN Tours - Spiritual Tourism & Pilgrimage Tours',
+    template: '%s | BVN Tours - Spiritual Tourism'
   },
-  description: 'Embark on your spiritual journey with ShubhYatra. Discover holy places, pilgrimage tours to Kedarnath, Ram Mandir, Varanasi, and more. Affordable, safe, and comfortable spiritual tours.',
+  description: 'Embark on your spiritual journey with BVN Tours. Discover holy places, pilgrimage tours to Kedarnath, Ram Mandir, Varanasi, and more. Affordable, safe, and comfortable spiritual tours.',
   keywords: [
     'spiritual tourism',
     'pilgrimage tours',
@@ -26,30 +26,30 @@ export const metadata: Metadata = {
     'religious tours',
     'spiritual travel',
     'pilgrimage packages',
-    'ShubhYatra'
+    'BVN Tours'
   ],
-  authors: [{ name: 'ShubhYatra Team' }],
-  creator: 'ShubhYatra',
+  authors: [{ name: 'BVN Tours Team' }],
+  creator: 'BVN Tours',
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://shubhyatra.com',
-    title: 'ShubhYatra - Spiritual Tourism & Pilgrimage Tours',
-    description: 'Embark on your spiritual journey with ShubhYatra. Discover holy places and pilgrimage tours with comfort, safety, and affordability.',
-    siteName: 'ShubhYatra',
+    url: 'https://bvntours.com',
+    title: 'BVN Tours - Spiritual Tourism & Pilgrimage Tours',
+    description: 'Embark on your spiritual journey with BVN Tours. Discover holy places and pilgrimage tours with comfort, safety, and affordability.',
+    siteName: 'BVN Tours',
     images: [
       {
         url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'ShubhYatra - Spiritual Tourism',
+        alt: 'BVN Tours - Spiritual Tourism',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'ShubhYatra - Spiritual Tourism & Pilgrimage Tours',
-    description: 'Embark on your spiritual journey with ShubhYatra. Discover holy places and pilgrimage tours.',
+    title: 'BVN Tours - Spiritual Tourism & Pilgrimage Tours',
+    description: 'Embark on your spiritual journey with BVN Tours. Discover holy places and pilgrimage tours.',
     images: ['/og-image.jpg'],
   },
   robots: {
@@ -71,8 +71,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={poppins.variable}>
+		<html lang="en">
+			<body className={poppins.variable} suppressHydrationWarning={true}>
         {children}
         <FloatingWhatsApp />
       </body>

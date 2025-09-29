@@ -11,6 +11,7 @@ import { packages } from '@/data/packages';
 import { FEATURES, generateWhatsAppUrl } from '@/lib/constants';
 import { Star, Award, Users, Clock } from 'lucide-react';
 import Link from 'next/link';
+import { BrandName } from '@/components/BrandName';
 
 export default function Home() {
   const featuredPackages = packages.filter(pkg => pkg.featured).slice(0, 3);
@@ -105,7 +106,7 @@ export default function Home() {
               viewport={{ once: true }}
               className="text-3xl md:text-4xl font-bold text-gray-900 mb-4"
             >
-              Why Choose ShubhYatra?
+              Why Choose <BrandName />?
             </motion.h2>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
@@ -184,6 +185,6 @@ export default function Home() {
       <GalleryGrid />
 
       <Footer />
-    </main>
+    </main> 
   );
 }

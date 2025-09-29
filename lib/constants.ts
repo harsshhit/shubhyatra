@@ -1,15 +1,15 @@
 export const CONTACT_INFO = {
   phone: '+91 98765 43210',
   whatsapp: '+91 98765 43210',
-  email: 'info@shubhyatra.com',
+  email: 'info@bvntours.com',
   address: 'Spiritual Tourism Center, New Delhi, India'
 };
 
 export const SOCIAL_LINKS = {
-  facebook: 'https://facebook.com/shubhyatra',
-  instagram: 'https://instagram.com/shubhyatra',
-  youtube: 'https://youtube.com/shubhyatra',
-  twitter: 'https://twitter.com/shubhyatra'
+  facebook: 'https://facebook.com/bvntours',
+  instagram: 'https://instagram.com/bvntours',
+  youtube: 'https://youtube.com/@bvntours',
+  twitter: 'https://twitter.com/bvntours'
 };
 
 export const FEATURES = [
@@ -61,7 +61,7 @@ export const TEAM_MEMBERS = [
     name: 'Swami Ramanand',
     role: 'Spiritual Guide & Founder',
     image: 'https://images.pexels.com/photos/1121796/pexels-photo-1121796.jpeg?auto=compress&cs=tinysrgb&w=400',
-    bio: 'With over 20 years of spiritual practice and pilgrimage experience, Swami Ramanand founded ShubhYatra to make spiritual journeys accessible to all devotees.'
+    bio: 'With over 20 years of spiritual practice and pilgrimage experience, Swami Ramanand founded BVN Tours to make spiritual journeys accessible to all devotees.'
   },
   {
     id: '2',
@@ -80,6 +80,6 @@ export const TEAM_MEMBERS = [
 ];
 
 export const generateWhatsAppUrl = (packageTitle?: string, message?: string) => {
-  const baseMessage = message || `Hello ShubhYatra, I want to book${packageTitle ? ` ${packageTitle}` : ' a spiritual tour package'}. Please provide more details.`;
+  const baseMessage = message || `Hello BVN Tours, I want to book${packageTitle ? ` ${packageTitle}` : ' a spiritual tour package'}. Please provide more details.`;
   return `https://wa.me/${CONTACT_INFO.whatsapp.replace(/[^0-9]/g, '')}?text=${encodeURIComponent(baseMessage)}`;
 };

@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import { Navbar } from '@/components/Navbar';
 import { Footer } from '@/components/Footer';
 import { CONTACT_INFO, SOCIAL_LINKS, generateWhatsAppUrl } from '@/lib/constants';
+import { BrandName } from '@/components/BrandName';
 import { 
   MapPin, Phone, Mail, MessageCircle, Clock, Send, User, 
   Calendar, Users, MessageSquare, CheckCircle, Facebook, 
@@ -42,7 +43,7 @@ export default function ContactPage() {
     setIsSubmitted(true);
 
     // Generate WhatsApp message
-    const message = `Hello ShubhYatra,\n\nI'm interested in booking a pilgrimage tour.\n\nDetails:\n- Name: ${formData.name}\n- Email: ${formData.email}\n- Phone: ${formData.phone}\n- Destination: ${formData.destination}\n- Travel Date: ${formData.travelDate}\n- Group Size: ${formData.groupSize}\n- Message: ${formData.message}\n\nPlease contact me with more information.`;
+    const message = `Hello BVN Tours,\n\nI'm interested in booking a pilgrimage tour.\n\nDetails:\n- Name: ${formData.name}\n- Email: ${formData.email}\n- Phone: ${formData.phone}\n- Destination: ${formData.destination}\n- Travel Date: ${formData.travelDate}\n- Group Size: ${formData.groupSize}\n- Message: ${formData.message}\n\nPlease contact me with more information.`;
     
     setTimeout(() => {
       window.open(generateWhatsAppUrl('', message), '_blank');
@@ -114,7 +115,7 @@ export default function ContactPage() {
             className="text-center text-white"
           >
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              Contact ShubhYatra
+              Contact <BrandName />
             </h1>
             <p className="text-xl opacity-90 max-w-3xl mx-auto">
               Ready to embark on your spiritual journey? Get in touch with our expert team 

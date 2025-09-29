@@ -2,8 +2,11 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, MapPin } from 'lucide-react';
+import { BrandName } from '@/components/BrandName';
+import { Menu, X } from 'lucide-react';
+import logo from '@/assets/logo.jpg';
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -38,14 +41,19 @@ export function Navbar() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-gradient-to-br from-saffron to-saffron-dark rounded-lg flex items-center justify-center">
-              <MapPin className="w-6 h-6 text-white" />
+            <div className="h-10 w-auto max-h-10 rounded-lg overflow-hidden">
+              <Image
+                src={logo}
+                alt="ShubhYatra logo"
+                className="h-full w-full object-contain"
+                priority
+              />
             </div>
             <div>
-              <h1 className="text-xl font-bold text-gray-900">
-                Shubh<span className="text-saffron">Yatra</span>
+              <h1 className={`text-xl font-bold ${scrolled ? 'text-gray-900' : 'text-white'}`}>
+                <BrandName toursClassName="text-saffron" />
               </h1>
-              <p className="text-xs text-gray-600 -mt-1">Spiritual Tourism</p>
+              <p className={`text-xs -mt-1 ${scrolled ? 'text-gray-600' : 'text-gray-200'}`}>Spiritual Tourism</p>
             </div>
           </Link>
 

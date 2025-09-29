@@ -1,21 +1,24 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import { BrandName } from '@/components/BrandName';
 import { generateWhatsAppUrl } from '@/lib/constants';
 import { MessageCircle, Star } from 'lucide-react';
+import heroBackgroundImage from '@/assets/herogbg.jpg';
+import { StaticImageData } from 'next/image';
 
 interface HeroBannerProps {
-  title?: string;
+  title?: React.ReactNode;
   subtitle?: string;
-  backgroundImage?: string;
+  backgroundImage?: string | StaticImageData;
   showBookingButton?: boolean;
   height?: 'full' | 'large' | 'medium';
 }
 
 export function HeroBanner({
-  title = "अपनी आध्यात्मिक यात्रा शुरू करें - ShubhYatra के साथ",
-  subtitle = "भारत के पवित्र स्थलों की खोज करें। आराम, सुरक्षा और भक्ति के साथ दिव्य गंतव्यों का अनुभव करें।",
-  backgroundImage = "https://upload.wikimedia.org/wikipedia/commons/d/df/Ayodhya_Ram_Mandir_Inauguration_Day_Picture.jpg",
+  title = (<><span>Begin your spiritual journey with </span><BrandName /></>),
+  subtitle = "Explore India's sacred sites. Experience divine destinations with comfort, safety, and devotion.",
+  backgroundImage = heroBackgroundImage,
   showBookingButton = true,
   height = 'full'
 }: HeroBannerProps) {
@@ -29,12 +32,12 @@ export function HeroBanner({
     <div className={`relative ${heightClasses[height]} flex items-center justify-center overflow-hidden`}>
       {/* Background Image with Overlay */}
       <div 
-        className="absolute inset-0 bg-cover bg-center bg-fixed"
+        className="absolute inset-0 bg-cover bg-center"
         style={{ 
-          backgroundImage: `url(${backgroundImage})`,
+          backgroundImage: `url(${typeof backgroundImage === 'string' ? backgroundImage : backgroundImage.src})`,
         }}
       >
-        <div className="absolute inset-0 bg-black/50 blur-sm"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
         {/* <div className="absolute inset-0 bg-gradient-to-r from-black/50 to-transparent"></div> */}
       </div>
 
@@ -56,14 +59,14 @@ export function HeroBanner({
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.5, duration: 0.6 }}
+              transition={{ delay: 0.4, duration: 0.5 }}
               className="flex flex-col sm:flex-row gap-4 justify-center items-center"
             >
               <a
                 href={generateWhatsAppUrl()}
-                className="inline-flex items-center px-8 py-4 bg-whatsapp hover:bg-whatsapp-dark text-white font-semibold rounded-full transition-all transform hover:scale-105 shadow-lg hover:shadow-xl group"
+                className="inline-flex items-center px-8 py-4 bg-whatsapp hover:bg-whatsapp-dark text-white font-semibold rounded-full transition-colors shadow-lg hover:shadow-xl"
               >
-                <MessageCircle className="w-5 h-5 mr-2 group-hover:animate-bounce" />
+                <MessageCircle className="w-5 h-5 mr-2" />
                 Book on WhatsApp
               </a>
               
@@ -79,17 +82,7 @@ export function HeroBanner({
           )}
         </motion.div>
 
-        {/* Floating Elements */}
-        <motion.div
-          animate={{ y: [0, -10, 0] }}
-          transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-          className="absolute top-20 left-10 w-20 h-20 bg-white/10 rounded-full blur-xl hidden lg:block"
-        />
-        <motion.div
-          animate={{ y: [0, 10, 0] }}
-          transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", delay: 1 }}
-          className="absolute bottom-32 right-16 w-16 h-16 bg-saffron/20 rounded-full blur-lg hidden lg:block"
-        />
+        {/* Floating elements removed for performance */}
       </div>
 
       {/* Scroll Indicator */}
