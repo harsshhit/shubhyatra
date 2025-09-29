@@ -229,8 +229,8 @@ export default function ContactPage() {
                           required
                           value={formData.phone}
                           onChange={handleInputChange}
-                          className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-saffron focus:border-transparent outline-none transition-all"
-                          placeholder="+91 98765 43210"
+                        className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-saffron focus:border-transparent outline-none transition-all"
+                        placeholder="+91 86018 88830"
                         />
                       </div>
                     </div>
@@ -443,7 +443,7 @@ export default function ContactPage() {
                 </p>
                 <div className="space-y-2">
                   <p className="font-semibold text-red-900">
-                    Emergency Hotline: +91 98765 43210
+                    Emergency Hotline: +91 86018 88830
                   </p>
                   <p className="text-sm text-red-700">
                     Available 24/7 for pilgrims currently on tour

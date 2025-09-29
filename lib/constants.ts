@@ -1,6 +1,6 @@
 export const CONTACT_INFO = {
-  phone: '+91 98765 43210',
-  whatsapp: '+91 98765 43210',
+  phone: '+91 86018 88830',
+  whatsapp: '+91 86018 88830',
   email: 'info@bvntours.com',
   address: 'Spiritual Tourism Center, New Delhi, India'
 };
