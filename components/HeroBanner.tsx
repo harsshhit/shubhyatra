@@ -28,6 +28,7 @@ export function HeroBanner({
     medium: 'h-[400px]'
   };
 
+
   return (
     <div className={`relative ${heightClasses[height]} flex items-center justify-center overflow-hidden`}>
       {/* Background Image with Overlay */}
