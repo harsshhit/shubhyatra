@@ -187,7 +187,7 @@ export default function PackageDetails({ params }: PackageDetailsProps) {
                     Book on WhatsApp
                   </a>
                   <a
-                    href={`tel:+91 86018 88830`}
+                    href={`tel:+91 9555496755`}
                     className="flex items-center justify-center px-6 py-3 bg-saffron hover:bg-saffron-dark text-white font-semibold rounded-xl transition-all transform hover:scale-105"
                   >
                     <Phone className="w-5 h-5 mr-2" />
@@ -444,7 +444,7 @@ export default function PackageDetails({ params }: PackageDetailsProps) {
                 Book on WhatsApp
               </a>
               <a
-                href={`tel:+91 86018 88830`}
+                href={`tel:+91 9555496755`}
                 className="px-8 py-4 border-2 border-white text-white font-semibold rounded-full hover:bg-white hover:text-saffron transition-all transform hover:scale-105 flex items-center justify-center"
               >
                 <Phone className="w-5 h-5 mr-2" />

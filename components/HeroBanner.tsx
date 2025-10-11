@@ -4,8 +4,9 @@ import { motion } from 'framer-motion';
 import { BrandName } from '@/components/BrandName';
 import { generateWhatsAppUrl } from '@/lib/constants';
 import { MessageCircle, Star } from 'lucide-react';
-import heroBackgroundImage from '@/assets/herogbg.jpg';
+import heroBackgroundImage from '../assets/herobg.jpg';
 import { StaticImageData } from 'next/image';
+
 
 interface HeroBannerProps {
   title?: React.ReactNode;
@@ -16,7 +17,7 @@ interface HeroBannerProps {
 }
 
 export function HeroBanner({
-  title = (<><span>Begin your spiritual journey with </span><BrandName /></>),
+  title = (<><span>Begin your journey with </span><BrandName /></>),
   subtitle = "Explore India's sacred sites. Experience divine destinations with comfort, safety, and devotion.",
   backgroundImage = heroBackgroundImage,
   showBookingButton = true,
